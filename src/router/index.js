@@ -18,7 +18,6 @@
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-// import VueAwesomeSwiper from 'vue-awesome-swiper';
 
 import Msite from './../pages/Msite/Msite';
 import Search from './../pages/Search/Search';
@@ -28,7 +27,7 @@ import Login from './../pages/Login/Login';
 
 // 使用插件
 Vue.use(VueRouter)
-// Vue.use(VueAwesomeSwiper)
+
 
 // VueRouter是一个构造函数， 里面传一个配置对象（配置路由）
 export default new VueRouter({

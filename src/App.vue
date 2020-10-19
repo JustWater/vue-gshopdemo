@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <div>1111</div>
     <FooterGuide v-show="$route.meta.showFooter"></FooterGuide>
   </div>
 </template>
@@ -10,6 +11,10 @@ import FooterGuide from './components/FooterGuide/FooterGuide'
 export default {
   components: {
     FooterGuide
+  },
+  mounted(){
+    console.log(this.$store)
+    this.$store.dispatch('getAddress')
   }
 }
 </script>
